@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>必做题页面重构</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!-- 头部区域 -->
+    <div class="headerBox">
+    	<!-- 底边的条纹 -->
+    	<div class="header_bottom"></div>
+    	<!-- 头部区域 -->
+    	<div class="header comWidth">
+    		<div class="logo fl"><h1 class="fl">MODUS</h1><p>versus</p></div>
+    		<ul class="nav">
+    			<li class="active"><a>HOME</a></li>
+    			<li><a>ABOUT</a></li>
+    			<li><a>SERVICES</a></li>
+    			<li class="more"><a>PORTFOLIO</a><ul class="listBox clearfix">
+    				<li><a>Portfolio 2 column p</a></li>
+    				<li><a>Portfolio 2 column p</a></li>
+    				<li><a>Portfolio 2 column p</a></li>
+    			</ul></li>
+    			<li><a>BLOG</a></li>
+    			<li><a>FEATURES</a></li>
+    			<li><a>CONTACTS</a></li>
+    		</ul>
+    		<div class="search fr"><img src="images/search.jpg"></div>
+    	</div>	
+    </div>
+    <!-- sectionHome区域 -->
+    <div class="homeBox">
+    	<div class="home comWidth">
+    		<ul class="imgMain">
+    			<div class="homeTxtBox">
+    				<h1>VESTIBULUM</h1>
+    				<p>Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
+    			</div>
+    		</ul>
+    		<ul class="homeNav">
+    			<li></li>
+    			<li class="active"></li>
+    			<li></li>
+    		</ul>
+    	</div>
+    	<!-- 按钮区域 -->
+    	<div class="prev_btn btn">&lt;&lt;</div>
+    	<div class="next_btn btn">&gt;&gt;</div>
+    </div>
+    <!-- 固定hr扩展 用于填充homeBox中homeNav向下的53px-->
+    <div class="hr_53"></div>
+    <!-- sectionIntro区域 -->
+    <div class="introBox">
+    	<div class="intro comWidth">
+    		<div class="inTxtBox">
+    			<h1>Some of our top services</h1>
+    			<p>Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. </p>
+    		</div>
+    		<div class="intMore fr"><a>VIEW MORE</a></div>
+    	</div>
+    </div>
+   	<!--  sectionServices区域 -->
+     <div class="servicesBox">
+    	<div class="services comWidth">
+    		<div class="cardBox clearfix">
+    			<div class="card fl active">
+    				<div class="cardTxt">
+    					<div class="suspen"></div>
+    					<h1>SUSPENDISSE </h1>
+    				</div>
+    				<p>Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc.</p>
+    				<div class="cardMore"><a href="">read more</a></div>
+    			</div>
+    			<div class="card fl">
+    				<div class="cardTxt">
+    					<div class="maece"></div>
+    					<h1>MAECENAS</h1>
+    				</div>
+    				<p>Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
+    				<div class="cardMore"><a href="">read more</a></div>
+    			</div>
+    			<div class="card fl">
+    				<div class="cardTxt">
+    					<div class="aliqu"></div>
+    					<h1>ALIQUAM</h1>
+    				</div>
+    				<p>Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.</p>
+    				<div class="cardMore"><a href="">read more</a></div>
+    			</div>
+    			<div class="card fl lastCard">
+    				<div class="cardTxt">
+    					<div class="habit"></div>
+    					<h1>HABITASSE</h1>
+    				</div>
+    				<p>Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.</p>
+    				<div class="cardMore"><a href="">read more</a></div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!--  sectionAbout区域 -->
+    <div class="aboutBox">
+    	<div class="header_top"></div>
+    	<div class="about comWidth">
+    		<div class="abTxtBox">
+    			<h1>WHY MODUS VERSUS?</h1>
+    			<p>Capacitance cascading integer reflective interface data development high bus cache dithering transponder.  </p>
+    		</div>
+    		<div class="abCardBox">
+    			<div class="abCardLeft abCard"></div>
+    			<div class="abCardMain"></div>
+    			<div class="abCardRight abCard"></div>
+    		</div>
+    	</div>
+    </div>
+    <!--  sectionElemnts区域(自己增加的) -->
+    <div class="elemntBox">
+    	<div class="elemnts comWidth">
+    		<div class="eleLeftBox">
+    			<h1>Why Choose Us?</h1>
+    			<ul class="eleLeftList">
+    				<li><a href="">Quisque at massa ipsum</a></li>
+    				<li><a href="">Maecenas a lorem augue, egestas</a></li>
+    				<li><a href="">Cras vitae felis at lacus eleifend</a></li>
+    				<li><a href="">Etiam auctor diam pellentesque</a></li>
+    				<li><a href="">Nulla ac massa at dolor</a></li>
+    				<li><a href="">Condimentum eleifend vitae vitae</a></li>
+    			</ul>
+    		</div>
+    		<div class="eleMainBox clearfix">
+    			<p>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus <span>vehicula mattis</span>. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.</p>
+    			<div class="eleMainDataBox fl">
+    				<div class="dataImg suspImg"></div>
+    				<h1>SUSPENDISSE</h1>
+    			</div>
+    			<div class="eleMainDataBox fl">
+    				<div class="dataImg maceImg"></div>
+    				<h1>MAECENAS</h1>
+    			</div>
+    			<div class="eleMainDataBox fl">
+    				<div class="dataImg aliqImg"></div>
+    				<h1>ALIQUAM</h1>
+    			</div>
+    			<div class="eleMainDataBox fl DataBoxLast">
+    				<div class="dataImg habiImg"></div>
+    				<h1>HABITASSE </h1>
+    			</div>
+    		</div>
+    		<div class="eleRightBox">
+    			<h1>What Client’s Say ?</h1>
+    			<div class="rightTxtBox">
+    				<p>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis.<span>Nulla ac massa at dolor condimentum</span></p>
+    				<p class="auther">Jhon Doe</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!--  sectionClient区域 -->
+    <div class="clientBox">
+    	<div class="client comWidth">
+    		<div class="clientHeaderBox">
+    			<h1 class="cliHeadTitle">Our Happy Clients</h1>
+    			<div class="cliHeadLine"></div>
+    			<div class="cliHeadRightBox clearfix">
+    				<div class="cliPrevBtn cliBtn">&lt;</div>
+    				<div class="cliNextBtn cliBtn">&gt;</div>
+    			</div>
+    		</div>
+    		<div class="clientMainBox">
+    			<div class="cliMainImg"></div>
+    			<div class="cliMainImg"></div>
+    			<div class="cliMainImg"></div>
+    			<div class="cliMainImg"></div>
+    			<div class="cliMainImg"></div>
+    			<div class="cliMainImg MainImgLast"></div>
+    		</div>
+    	</div>
+    </div>   
+    <!-- footer区域 -->
+    <div class="footerBox">
+    	<div class="ft_Line"></div>
+    	<div class="footer comWidth">
+			<div class="ftMainLeftBox clearfix">
+				<div class="logo fl"><h1 class="fl">MODUS</h1><p class="logoP">versus</p></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p>
+				<p class="ftPhone">Phone:<span>182 2569 5896</span></p>
+				<p class="eMail">e-mail:<span>info@modu.versus</span></p>
+			</div>
+    		<div class="ftMainCenBox clearfix">
+				<div class="ftMaCenBox fl">
+					<h1>Company</h1>
+					<ul>
+						<li><a href="">About</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Terms</a></li>
+						<li><a href="">Privacy</a></li>
+						<li><a href="">Testimonials</a></li>
+					</ul>
+				</div>
+				<div class="ftMaCenBox fl">
+					<h1>Community</h1>
+					<ul>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Forum</a></li>
+						<li><a href="">Support</a></li>
+						<li><a href="">Newsletter</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="ftMainRigBox">
+				<h1>from the <span>BLOG</span></h1>
+				<div class="RigBoxDec clearfix">
+					<div class="RigBoxImg fl"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="date">26 May, 2013</p>
+				</div>
+				<div class="RigBoxDec clearfix">
+					<div class="RigBoxImg fl"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="date">26 May, 2013</p>
+				</div>
+			</div>
+    	</div>
+    </div>
+    <!-- footerShare区域 -->
+    <div class="footerShareBox">
+    	<div class="footerShare comWidth">
+    		<p>2013  ModusVersus</p>
+    		<div class="ftShareRig">
+    			<a href="" class="face fl"></a>
+    			<a href="" class="google fl"></a>
+    			<a href="" class="bird fl"></a>
+    			<a href="" class="wifi fl"></a>
+    		</div>
+    	</div>
+    </div>
+
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
