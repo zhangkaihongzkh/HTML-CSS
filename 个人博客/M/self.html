@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>css动画</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0 auto;
+	}
+	html,body{
+	 	height: 100%;
+		width: 100%; 
+	}
+	body{
+		overflow-y: hidden;
+
+	}
+	.main{
+		overflow: hidden;
+		position: relative;
+		height: 100%; 
+	}
+	#bg1{
+		width: 200%;
+		height: 100%;
+		opacity: 0.8;
+		filter:alpha(opacity=80);
+		background: #0CE9D7;
+		position: absolute;
+		left: -5%;
+		top: 40%;
+		z-index: 100;
+		-webkit-transform-origin: 5% 0%;
+		-webkit-animation:rotating1 800ms 200ms both;
+	}
+	#bg2{
+		z-index: 100;
+		width: 200%;
+		height: 100%;
+		opacity: 0.8;
+		filter:alpha(opacity=80);
+		background: #0CE9D7;
+		position: absolute;
+		left: -17%;
+		-webkit-transform-origin: 5% 100%;
+		-webkit-animation: rotating2 800ms 200ms both;
+	}
+	@-webkit-keyframes rotating1 {
+		100%{
+			-webkit-transform:rotate(30deg);
+		}
+	}
+	@-webkit-keyframes rotating2{
+		100%{
+			-webkit-transform:rotate(-45deg);
+		}
+	}
+</style>
+</head>
+<body>
+    <div class="main">
+    	<div id="bg1"></div>
+    	<div id="bg2"></div>
+    	<div id="wrap">
+    		<div id="logo"></div>
+    		<div id="content">
+    			<h1></h1>
+    			<div class="qr">
+    				<div id="qr-code"></div>
+    				<p></p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>
